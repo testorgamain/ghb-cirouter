@@ -1,0 +1,39 @@
+{
+  "routes": [
+    {
+      "id": "github-hosted-4vcpu",
+      "provider": "github",
+      "runsOn": "ubuntu-24.04",
+      "vcpu": 4,
+      "memoryGb": 16,
+      "image": "ubuntu-24.04",
+      "enabled": true,
+      "archiveLogs": true
+    },
+    {
+      "id": "ubicloud-hosted-4vcpu",
+      "provider": "ubicloud",
+      "runsOn": "ubicloud-standard-4-ubuntu-2404",
+      "vcpu": 4,
+      "memoryGb": 16,
+      "image": "ubuntu-24.04",
+      "enabled": false,
+      "hostedRunner": true,
+      "settings": {
+        "premiumCpu": null,
+        "transparentCache": null
+      },
+      "note": "Ubicloud's own hosted runner, started through the Ubicloud GitHub App. Disabled until that App is installed on the organization. Record the premium CPU and transparent cache settings here before enabling it; null means not recorded."
+    },
+    {
+      "id": "ours-4vcpu",
+      "provider": "ours",
+      "runsOn": "ci-metal-4",
+      "vcpu": 4,
+      "memoryGb": 16,
+      "image": "ubuntu-24.04",
+      "enabled": true,
+      "archiveLogs": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "suite": "0.1.0",
+  "workloads": {
+    "rust-ripgrep": {
+      "kind": "rust release build",
+      "repository": "https://github.com/BurntSushi/ripgrep",
+      "tag": "15.2.0",
+      "commit": "e89fff89ac9af12e8d4ce9d5fd07beb408ca730f",
+      "toolchain": "rust 1.99.1"
+    },
+    "node-typescript": {
+      "kind": "node build and tests",
+      "repository": "https://github.com/microsoft/TypeScript",
+      "tag": "v7.0.2",
+      "commit": "1e4744d68260a7cb91b62b12edc3f6a2187faaf1",
+      "toolchain": "node 22.23.4"
+    }
+  }
+}

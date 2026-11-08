@@ -1,0 +1,51 @@
+name: archive
+
+# Manual only. Saves the raw data of one finished benchmark run (the jobs API
+# response and the logs of routes that opt in) to the `results` branch, for a
+# run whose collect job did not do it. It never writes rows. The script refuses
+# any run that is not this repository's benchmark workflow on main.
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Run id of the benchmark run to archive (integer)
+        required: true
+        type: string
+      attempt:
+        description: Attempt of that run (integer)
+        required: false
+        default: '1'
+        type: string
+
+permissions: {}
+
+jobs:
+  archive:
+    name: archive
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22.23.4'
+      - name: archive raw data
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.run_id }}
+          RUN_ATTEMPT: ${{ inputs.attempt }}
+        run: node bench/archive.mjs --out out
+      - name: publish to the results branch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PUBLISH_RUN_ID: ${{ inputs.run_id }}
+          PUBLISH_RUN_ATTEMPT: ${{ inputs.attempt }}
+        run: bash bench/publish.sh out

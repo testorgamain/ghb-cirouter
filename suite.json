@@ -1,0 +1,19 @@
+{
+  "suite": "0.2.0",
+  "workloads": {
+    "rust-analyzer": {
+      "kind": "rust release build",
+      "repository": "https://github.com/rust-lang/rust-analyzer",
+      "tag": "2026-11-02",
+      "commit": "b98172d80f0da12bbde3d6733c274e17cb6417aa",
+      "toolchain": "rust 1.98.0"
+    },
+    "node-typescript": {
+      "kind": "node build and tests",
+      "repository": "https://github.com/microsoft/TypeScript",
+      "tag": "v7.0.2",
+      "commit": "1e4744d68260a7cb91b62b12edc3f6a2187faaf1",
+      "toolchain": "node 22.23.4"
+    }
+  }
+}

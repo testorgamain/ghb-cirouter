@@ -1,0 +1,113 @@
+name: benchmark
+
+# Manual runs only. There is no schedule yet and no pull_request trigger, on
+# purpose: a pull request must never be able to start a benchmark job.
+on:
+  workflow_dispatch:
+    inputs:
+      repeats:
+        description: Repeats per route and workload (integer, 1 to 10)
+        required: false
+        default: '1'
+        type: string
+
+permissions: {}
+
+jobs:
+  plan:
+    name: plan
+    runs-on: ubuntu-24.04
+    permissions: {}
+    timeout-minutes: 5
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22.23.4'
+      - name: matrix
+        id: matrix
+        env:
+          REPEATS: ${{ inputs.repeats }}
+        run: node bench/plan.mjs
+
+  run:
+    name: run ${{ matrix.route.id }} ${{ matrix.workload }} ${{ matrix.rep }}
+    needs: plan
+    runs-on: ${{ matrix.route.runsOn }}
+    timeout-minutes: 30
+    permissions: {}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    env:
+      WORKLOAD: ${{ matrix.workload }}
+    steps:
+      - name: checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: fingerprint
+        run: bash bench/fingerprint.sh > fingerprint.json
+      - name: setup
+        run: bash "workloads/${WORKLOAD}/setup.sh"
+      - name: work
+        run: bash "workloads/${WORKLOAD}/work.sh"
+      - name: upload fingerprint
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: fingerprint-${{ github.run_attempt }}-${{ matrix.route.id }}-${{ matrix.workload }}-${{ matrix.rep }}
+          path: fingerprint.json
+          if-no-files-found: ignore
+          retention-days: 90
+
+  collect:
+    name: collect
+    needs: run
+    if: ${{ always() && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - name: checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22.23.4'
+      - name: download fingerprints
+        continue-on-error: true
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          pattern: fingerprint-${{ github.run_attempt }}-*
+          path: artifacts
+      - name: collect
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: node bench/collect.mjs --artifacts artifacts --out out
+      # Raw copies of what GitHub deletes. A failure here warns and does not
+      # stop the rows from publishing.
+      - name: archive raw data
+        if: ${{ !cancelled() }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: node bench/archive.mjs --out out || echo "::warning::raw data was not archived; see the log above"
+      - name: publish to the results branch
+        if: ${{ !cancelled() }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash bench/publish.sh out

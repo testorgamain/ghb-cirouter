@@ -1,0 +1,5 @@
+node_modules/
+out/
+artifacts/
+fingerprint.json
+.DS_Store
