@@ -1,0 +1,1293 @@
+{
+  "total_count": 14,
+  "jobs": [
+    {
+      "id": 128859186302,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAJskfg",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128859186302",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128859186302",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T20:56:05Z",
+      "started_at": "2026-11-08T21:08:09Z",
+      "completed_at": "2026-11-08T21:08:16Z",
+      "name": "plan",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:08:10Z",
+          "completed_at": "2026-11-08T21:08:11Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:08:11Z",
+          "completed_at": "2026-11-08T21:08:12Z"
+        },
+        {
+          "name": "node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:08:12Z",
+          "completed_at": "2026-11-08T21:08:13Z"
+        },
+        {
+          "name": "matrix",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:08:13Z",
+          "completed_at": "2026-11-08T21:08:13Z"
+        },
+        {
+          "name": "Post node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-08T21:08:13Z",
+          "completed_at": "2026-11-08T21:08:13Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-08T21:08:13Z",
+          "completed_at": "2026-11-08T21:08:13Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-08T21:08:13Z",
+          "completed_at": "2026-11-08T21:08:13Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128859186302",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000476,
+      "runner_name": "GitHub Actions 1000000476",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381085,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkHQ",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381085",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381085",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:10:30Z",
+      "completed_at": "2026-11-08T21:15:53Z",
+      "name": "run github-hosted-4vcpu rust-analyzer 2",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:10:31Z",
+          "completed_at": "2026-11-08T21:10:31Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:10:31Z",
+          "completed_at": "2026-11-08T21:10:32Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:10:32Z",
+          "completed_at": "2026-11-08T21:10:32Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:10:32Z",
+          "completed_at": "2026-11-08T21:10:46Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:10:46Z",
+          "completed_at": "2026-11-08T21:15:50Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:15:50Z",
+          "completed_at": "2026-11-08T21:15:51Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:15:51Z",
+          "completed_at": "2026-11-08T21:15:52Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:15:52Z",
+          "completed_at": "2026-11-08T21:15:52Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381085",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000491,
+      "runner_name": "GitHub Actions 1000000491",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381103,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkLw",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381103",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381103",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:11:27Z",
+      "completed_at": "2026-11-08T21:21:20Z",
+      "name": "run github-hosted-4vcpu node-typescript 2",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:11:28Z",
+          "completed_at": "2026-11-08T21:11:28Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:11:28Z",
+          "completed_at": "2026-11-08T21:11:29Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:11:29Z",
+          "completed_at": "2026-11-08T21:11:29Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:11:29Z",
+          "completed_at": "2026-11-08T21:11:46Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:11:46Z",
+          "completed_at": "2026-11-08T21:21:16Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:21:16Z",
+          "completed_at": "2026-11-08T21:21:18Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:21:18Z",
+          "completed_at": "2026-11-08T21:21:18Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:21:18Z",
+          "completed_at": "2026-11-08T21:21:18Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381103",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000495,
+      "runner_name": "GitHub Actions 1000000495",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381104,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkMA",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381104",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381104",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:10:30Z",
+      "completed_at": "2026-11-08T21:14:26Z",
+      "name": "run github-hosted-4vcpu rust-analyzer 1",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:10:30Z",
+          "completed_at": "2026-11-08T21:10:31Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:10:31Z",
+          "completed_at": "2026-11-08T21:10:32Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:10:32Z",
+          "completed_at": "2026-11-08T21:10:32Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:10:32Z",
+          "completed_at": "2026-11-08T21:10:43Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:10:43Z",
+          "completed_at": "2026-11-08T21:14:23Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:14:23Z",
+          "completed_at": "2026-11-08T21:14:24Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:14:24Z",
+          "completed_at": "2026-11-08T21:14:24Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:14:24Z",
+          "completed_at": "2026-11-08T21:14:24Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381104",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000492,
+      "runner_name": "GitHub Actions 1000000492",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381105,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkMQ",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381105",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381105",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:26:50Z",
+      "completed_at": "2026-11-08T21:29:49Z",
+      "name": "run ours-4vcpu rust-analyzer 2",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:26:51Z",
+          "completed_at": "2026-11-08T21:26:52Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:26:52Z",
+          "completed_at": "2026-11-08T21:26:53Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:26:53Z",
+          "completed_at": "2026-11-08T21:26:53Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:26:53Z",
+          "completed_at": "2026-11-08T21:27:05Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:27:05Z",
+          "completed_at": "2026-11-08T21:29:44Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:29:44Z",
+          "completed_at": "2026-11-08T21:29:46Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:29:46Z",
+          "completed_at": "2026-11-08T21:29:46Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:29:46Z",
+          "completed_at": "2026-11-08T21:29:46Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381105",
+      "labels": [
+        "ci-metal-4"
+      ],
+      "runner_id": 307,
+      "runner_name": "ci-metal-4-e8ffc0288b0d",
+      "runner_group_id": 1,
+      "runner_group_name": "default"
+    },
+    {
+      "id": 128862381144,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkWA",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381144",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381144",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:11:16Z",
+      "completed_at": "2026-11-08T21:20:11Z",
+      "name": "run github-hosted-4vcpu node-typescript 3",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:11:17Z",
+          "completed_at": "2026-11-08T21:11:17Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:11:17Z",
+          "completed_at": "2026-11-08T21:11:18Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:11:18Z",
+          "completed_at": "2026-11-08T21:11:18Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:11:18Z",
+          "completed_at": "2026-11-08T21:11:36Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:11:36Z",
+          "completed_at": "2026-11-08T21:20:09Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:20:09Z",
+          "completed_at": "2026-11-08T21:20:10Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:20:10Z",
+          "completed_at": "2026-11-08T21:20:10Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:20:10Z",
+          "completed_at": "2026-11-08T21:20:10Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381144",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000494,
+      "runner_name": "GitHub Actions 1000000494",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381147,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkWw",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381147",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381147",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:09:09Z",
+      "completed_at": "2026-11-08T21:19:14Z",
+      "name": "run github-hosted-4vcpu node-typescript 1",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:09:10Z",
+          "completed_at": "2026-11-08T21:09:10Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:09:10Z",
+          "completed_at": "2026-11-08T21:09:11Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:09:11Z",
+          "completed_at": "2026-11-08T21:09:11Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:09:11Z",
+          "completed_at": "2026-11-08T21:09:30Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:09:30Z",
+          "completed_at": "2026-11-08T21:19:11Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:19:11Z",
+          "completed_at": "2026-11-08T21:19:12Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:19:12Z",
+          "completed_at": "2026-11-08T21:19:12Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:19:12Z",
+          "completed_at": "2026-11-08T21:19:12Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381147",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000482,
+      "runner_name": "GitHub Actions 1000000482",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381153,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkYQ",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381153",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381153",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:50:43Z",
+      "completed_at": "2026-11-08T21:57:24Z",
+      "name": "run ours-4vcpu node-typescript 1",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:50:44Z",
+          "completed_at": "2026-11-08T21:50:45Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:50:45Z",
+          "completed_at": "2026-11-08T21:50:46Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:50:46Z",
+          "completed_at": "2026-11-08T21:50:46Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:50:46Z",
+          "completed_at": "2026-11-08T21:51:03Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:51:03Z",
+          "completed_at": "2026-11-08T21:57:20Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:57:20Z",
+          "completed_at": "2026-11-08T21:57:21Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:57:21Z",
+          "completed_at": "2026-11-08T21:57:21Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:57:21Z",
+          "completed_at": "2026-11-08T21:57:21Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381153",
+      "labels": [
+        "ci-metal-4"
+      ],
+      "runner_id": 356,
+      "runner_name": "ci-metal-4-4a8885a25b47",
+      "runner_group_id": 1,
+      "runner_group_name": "default"
+    },
+    {
+      "id": 128862381167,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkbw",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381167",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381167",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:54:41Z",
+      "completed_at": "2026-11-08T22:01:20Z",
+      "name": "run ours-4vcpu node-typescript 2",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:54:42Z",
+          "completed_at": "2026-11-08T21:54:43Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:54:43Z",
+          "completed_at": "2026-11-08T21:54:44Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:54:44Z",
+          "completed_at": "2026-11-08T21:54:44Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:54:44Z",
+          "completed_at": "2026-11-08T21:55:01Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:55:01Z",
+          "completed_at": "2026-11-08T22:01:15Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T22:01:15Z",
+          "completed_at": "2026-11-08T22:01:17Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T22:01:17Z",
+          "completed_at": "2026-11-08T22:01:17Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T22:01:17Z",
+          "completed_at": "2026-11-08T22:01:17Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381167",
+      "labels": [
+        "ci-metal-4"
+      ],
+      "runner_id": 365,
+      "runner_name": "ci-metal-4-612542d70e9c",
+      "runner_group_id": 1,
+      "runner_group_name": "default"
+    },
+    {
+      "id": 128862381178,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkeg",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381178",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381178",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:44:23Z",
+      "completed_at": "2026-11-08T21:47:23Z",
+      "name": "run ours-4vcpu rust-analyzer 3",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:44:24Z",
+          "completed_at": "2026-11-08T21:44:25Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:44:25Z",
+          "completed_at": "2026-11-08T21:44:26Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:44:26Z",
+          "completed_at": "2026-11-08T21:44:26Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:44:26Z",
+          "completed_at": "2026-11-08T21:44:39Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:44:39Z",
+          "completed_at": "2026-11-08T21:47:18Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:47:18Z",
+          "completed_at": "2026-11-08T21:47:20Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:47:20Z",
+          "completed_at": "2026-11-08T21:47:20Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:47:20Z",
+          "completed_at": "2026-11-08T21:47:20Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381178",
+      "labels": [
+        "ci-metal-4"
+      ],
+      "runner_id": 343,
+      "runner_name": "ci-metal-4-d21236f422ce",
+      "runner_group_id": 1,
+      "runner_group_name": "default"
+    },
+    {
+      "id": 128862381190,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkhg",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381190",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381190",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:21:28Z",
+      "completed_at": "2026-11-08T21:24:27Z",
+      "name": "run ours-4vcpu rust-analyzer 1",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:21:28Z",
+          "completed_at": "2026-11-08T21:21:30Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:21:30Z",
+          "completed_at": "2026-11-08T21:21:31Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:21:31Z",
+          "completed_at": "2026-11-08T21:21:31Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:21:31Z",
+          "completed_at": "2026-11-08T21:21:43Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:21:43Z",
+          "completed_at": "2026-11-08T21:24:23Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:24:23Z",
+          "completed_at": "2026-11-08T21:24:25Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:24:25Z",
+          "completed_at": "2026-11-08T21:24:25Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:24:25Z",
+          "completed_at": "2026-11-08T21:24:25Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381190",
+      "labels": [
+        "ci-metal-4"
+      ],
+      "runner_id": 299,
+      "runner_name": "ci-metal-4-cff8c91d72b8",
+      "runner_group_id": 1,
+      "runner_group_name": "default"
+    },
+    {
+      "id": 128862381198,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkjg",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381198",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381198",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:10:10Z",
+      "completed_at": "2026-11-08T21:14:12Z",
+      "name": "run github-hosted-4vcpu rust-analyzer 3",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:10:10Z",
+          "completed_at": "2026-11-08T21:10:11Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:10:11Z",
+          "completed_at": "2026-11-08T21:10:12Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:10:12Z",
+          "completed_at": "2026-11-08T21:10:12Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:10:12Z",
+          "completed_at": "2026-11-08T21:10:24Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:10:24Z",
+          "completed_at": "2026-11-08T21:14:08Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:14:08Z",
+          "completed_at": "2026-11-08T21:14:10Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:14:10Z",
+          "completed_at": "2026-11-08T21:14:10Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:14:10Z",
+          "completed_at": "2026-11-08T21:14:10Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381198",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000490,
+      "runner_name": "GitHub Actions 1000000490",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 128862381218,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAMvkog",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128862381218",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128862381218",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T21:08:16Z",
+      "started_at": "2026-11-08T21:34:24Z",
+      "completed_at": "2026-11-08T21:41:21Z",
+      "name": "run ours-4vcpu node-typescript 3",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T21:34:25Z",
+          "completed_at": "2026-11-08T21:34:26Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T21:34:26Z",
+          "completed_at": "2026-11-08T21:34:27Z"
+        },
+        {
+          "name": "fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T21:34:27Z",
+          "completed_at": "2026-11-08T21:34:27Z"
+        },
+        {
+          "name": "setup",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T21:34:27Z",
+          "completed_at": "2026-11-08T21:34:46Z"
+        },
+        {
+          "name": "work",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T21:34:46Z",
+          "completed_at": "2026-11-08T21:41:16Z"
+        },
+        {
+          "name": "upload fingerprint",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-08T21:41:16Z",
+          "completed_at": "2026-11-08T21:41:18Z"
+        },
+        {
+          "name": "Post checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-11-08T21:41:18Z",
+          "completed_at": "2026-11-08T21:41:18Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-11-08T21:41:18Z",
+          "completed_at": "2026-11-08T21:41:18Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128862381218",
+      "labels": [
+        "ci-metal-4"
+      ],
+      "runner_id": 327,
+      "runner_name": "ci-metal-4-e1fbc2b049c7",
+      "runner_group_id": 1,
+      "runner_group_name": "default"
+    },
+    {
+      "id": 128876029763,
+      "run_id": 42522606830,
+      "workflow_name": "benchmark",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/runs/42522606830",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVndBwc8AAAAeAZwnQw",
+      "head_sha": "aba24dbe93898fe6eb1466cedc3fdd5e45bca1e9",
+      "url": "https://api.github.com/repos/testorgamain/ghb-cirouter/actions/jobs/128876029763",
+      "html_url": "https://github.com/testorgamain/ghb-cirouter/actions/runs/42522606830/job/128876029763",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-08T22:01:20Z",
+      "started_at": "2026-11-08T22:01:22Z",
+      "completed_at": null,
+      "name": "collect",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-08T22:01:23Z",
+          "completed_at": "2026-11-08T22:01:24Z"
+        },
+        {
+          "name": "checkout",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-08T22:01:24Z",
+          "completed_at": "2026-11-08T22:01:25Z"
+        },
+        {
+          "name": "node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-08T22:01:25Z",
+          "completed_at": "2026-11-08T22:01:26Z"
+        },
+        {
+          "name": "download fingerprints",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-08T22:01:26Z",
+          "completed_at": "2026-11-08T22:01:27Z"
+        },
+        {
+          "name": "collect",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-08T22:01:27Z",
+          "completed_at": "2026-11-08T22:01:28Z"
+        },
+        {
+          "name": "archive raw data",
+          "status": "in_progress",
+          "conclusion": null,
+          "number": 6,
+          "started_at": "2026-11-08T22:01:28Z",
+          "completed_at": null
+        },
+        {
+          "name": "publish to the results branch",
+          "status": "pending",
+          "conclusion": null,
+          "number": 7,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Post node",
+          "status": "pending",
+          "conclusion": null,
+          "number": 13,
+          "started_at": null,
+          "completed_at": null
+        },
+        {
+          "name": "Post checkout",
+          "status": "pending",
+          "conclusion": null,
+          "number": 14,
+          "started_at": null,
+          "completed_at": null
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/testorgamain/ghb-cirouter/check-runs/128876029763",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000000647,
+      "runner_name": "GitHub Actions 1000000647",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}
